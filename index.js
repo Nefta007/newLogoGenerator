@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
+//const fs = require('fs');
 
-const init = () =>{
+const init = () => {
     inquirer.prompt([{
         type: 'input',
         name: 'svg',
@@ -21,8 +22,23 @@ const init = () =>{
         type: 'input',
         name: 'shapes-color',
         message: 'Please enter a color for the shape.',
-    }]).then((answers)=>{
-    console.log('Generated logo.svg');
-});
+    }]).then((answers) => {
+        shapeAnswers = answers.shape;
+        if (shapeAnswers === 'Circle') {
+            console.log('you chose a circle');
+        }
+        else if (shapeAnswers === 'Circle') {
+            console.log('you chose a circle');
+        }
+        else if (shapeAnswers === 'Circle') {
+            console.log('you chose a circle');
+        }
+        else {
+            console.log('there has been an error');
+        }
+
+        
+    });
 }
+
 init();
