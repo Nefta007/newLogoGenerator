@@ -11,7 +11,7 @@ class SVG {
         return `<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">${this.Usershape}${this.Usertext}</svg>`
     }
     setText(text,color){
-        this.Usertext = `  <text x="150" y="125" font-size="60" text-anchor="middle" fill="${color}">${text}</text>`
+        this.Usertext = `  <text x="150" y="120" font-family = "Georgia" font-size="60" text-anchor="middle" fill="${color}">${text}</text>`
     }
     setShape(shape){
         this.Usershape = shape.render();
@@ -48,7 +48,7 @@ const init = () => {
         colorOfShape = answers.shapesColor;
         colorOfText = answers.textColor;
         textLength = answers.svg;
-
+        upperAnswer = userAnswers.toUpperCase();
         if (textLength.length > 0 && textLength.length > 3) {
             console.log('Make sure text is 1-3 characters long');
             init();
@@ -71,7 +71,7 @@ const init = () => {
                 console.log('there has been an error');
             }
             var NEW_SVG = new SVG();
-            NEW_SVG.setText(userAnswers, colorOfText);
+            NEW_SVG.setText(upperAnswer, colorOfText);
             NEW_SVG.setShape(file_shape)
             newString = NEW_SVG.render();
 
