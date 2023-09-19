@@ -22,3 +22,6 @@ The Acceptance Criteria
 - AND the output text "Generated logo.svg" is printed in the command line
 - WHEN I open the `logo.svg` file in a browser
 - THEN I am shown a 300x200 pixel image that matches the criteria I entered
+
+- ![logo](https://github.com/Nefta007/newLogoGenerator/assets/135322031/7619450f-1822-4021-83d5-fa56517e8f7b)
+- ![logop2](https://github.com/Nefta007/newLogoGenerator/assets/135322031/689b5a3d-b6a4-46d9-a70a-6e42b3bef09a)
