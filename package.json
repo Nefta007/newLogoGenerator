@@ -10,11 +10,15 @@
   "author": "Neftali Percastegui",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.4",
-    "jest": "^29.7.0"
+    "inquirer": "^8.2.4"
   },
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts":{
+    "test": "jest"
+  }
 }
